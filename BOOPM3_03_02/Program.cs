@@ -80,3 +80,5 @@ namespace BOOPM3_03_02
 		}
 	}
 }
+//2.    In your solution DeckOfCards, make an immutable version of PlayingCard.
+
