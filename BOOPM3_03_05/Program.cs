@@ -30,11 +30,17 @@ namespace BOOPM3_03_05
             var rr1 = new RectangleRecord(200) { Width = 300 };
             var rr2 = rr1;
             Console.WriteLine(rr1);
-            Console.WriteLine(rr1 == rr2);
+            Console.WriteLine(rr1 == rr2);  // true
 
+            Console.WriteLine();
             rr2 = rr1 with { Width = rr1.Height*10 };
+            Console.WriteLine(rr1);
+            Console.WriteLine(rr2);
+
+            Console.WriteLine();
             Console.WriteLine(rr1.GetQuad());
             Console.WriteLine(rr2);
+            Console.WriteLine(rr1 == rr2);  // false
 
             // (double width, double height) = rr1;  // Width is no longer part of the generated deconstructor
         }

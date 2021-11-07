@@ -10,7 +10,7 @@ namespace BOOPM3_03_03
         {
             var rr1 = new RectangleRecord (400,100);
             var rr2 = rr1;
-            var rr3 = new RectangleRecord(0, 0);
+            var rr3 = new RectangleRecord(400, 100);
             Console.WriteLine(rr1);
             Console.WriteLine(rr1 == rr2);
             Console.WriteLine(rr1 == rr3);

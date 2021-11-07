@@ -14,7 +14,10 @@ namespace BOOPM3_03_02
 
 			public override string ToString() =>
 				$"{nameof(immutableRectangleStruct)} {{ {nameof(Width)}={Width}, {nameof(Height)}={Height} }}";
-			public immutableRectangleStruct(double width, double height) => (Width, Height) = (width, height);
+			public immutableRectangleStruct(double width, double height)
+			{ 
+				(Width, Height) = (width, height);
+			}
 			public immutableRectangleStruct GetQuad()
 			{
 				var result = new immutableRectangleStruct { Height = 2 * this.Height, Width = 2 * this.Width };
